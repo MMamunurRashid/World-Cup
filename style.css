@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Joan&family=Poppins:wght@500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+/* -----------------------
+------------Banner part */
+.banner-part {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  margin: 50px;
+}
+.banner {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  background-color: black;
+  border-radius: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 50px;
+  padding-bottom: 0;
+  color: aliceblue;
+}
+.banner-width {
+  width: 50%;
+}
+.banner img {
+  width: 80%;
+  height: 80%;
+}
+.banner h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+/* -----------------------
+ menu------------------ */
+.blog-menu-section {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+/*
+.menu {
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background-color: black;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+
+  background-color: aliceblue;
+} */
+.menu {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.menu a {
+  color: white;
+  display: block;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.menu a.active {
+  background-color: red;
+  color: white;
+}
+.menu a.deactive {
+  background-color: white;
+  color: black;
+}
+/* -----------------------
+ blog------------------ */
+.blog-section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.blog {
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.blog img {
+  width: 100%;
+}
+.blog-details {
+  padding: 20px;
+}
+#clock {
+  padding-left: 0;
+  padding-right: 10px;
+}
+#comment {
+  padding-right: 7px;
+  padding-left: 25px;
+}
+/* -----------------------
+----------------footer */
+.footer-section {
+  background-color: black;
+  padding-top: 100px;
+  text-align: center;
+  margin: 0;
+}
+#goal {
+  color: aliceblue;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+hr {
+  width: 80%;
+  margin: 0 auto;
+  color: rgba(245, 245, 245, 0.256);
+}
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-a {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding-right: 30px;
+}
+/* -----------------------
+----------------Upcoming Match */
+.match {
+  display: flex;
+  padding: 10px;
+}
+.match img {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.upcoming-matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.upcoming-match {
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+/* -----------------------
+----------------button */
+.button a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+  gap: 8px;
+}
+#view {
+  display: none;
+}
+/* -------------------------- -------------------
+----------------Media Query----------------- */
+@media only screen and (max-width: 688px) {
+  .banner-part {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+  .banner-width {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .banner img {
+    width: 100%;
+    height: 100%;
+  }
+  .blog-menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  .menu {
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .menu a.active {
+    background-color: red;
+    color: white;
+  }
+  .menu a.deactive {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer a {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
