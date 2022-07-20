@@ -196,7 +196,6 @@ footer {
   }
   .banner-width {
     width: 100%;
-    /* padding-bottom: 20px; */
   }
   .banner img {
     width: 100%;
@@ -254,8 +253,6 @@ footer {
 ----------------Media Query for Tablet----------------- */
 @media screen and (min-width: 689px) and (max-width: 992px) {
   .banner-part {
-    /* display: grid;
-    grid-template-columns: repeat(1, 1fr); */
     margin: 20px;
   }
   .banner {
